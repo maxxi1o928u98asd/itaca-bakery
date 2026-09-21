@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de pan artesanal y pasteles | Ítaca Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="description" content="Conoce el menú de Ítaca Bakery: panes de masa madre, croissants, pasteles y bebidas artesanales disponibles por preventa en Roma Norte.">
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="logotipo">Ítaca Bakery</p>
+        <p class="sublogo">Pan hechos con amor</p>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="activo" href="menu.html">Menú</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <button class="boton-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMovil" aria-controls="menuMovil">☰ Menú</button>
+    <div class="offcanvas offcanvas-end menu-movil" tabindex="-1" id="menuMovil" aria-labelledby="tituloMenuMovil">
+      <div class="offcanvas-header"><h2 class="offcanvas-title" id="tituloMenuMovil">Ítaca Bakery</h2><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div>
+      <div class="offcanvas-body"><p>Pan hechos con amor</p><ul class="menu-movil-lista"><li><a href="index.html">Inicio</a></li><li><a href="menu.html">Menú</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="pedidos.html">Pedidos</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+    </div>
+    <main class="pagina pagina-menu">
+      <section class="encabezado-pagina">
+        <div>
+          <p class="etiqueta">NUESTRO MENÚ</p>
+          <h1>Un menú hecho para elegir sin prisa.</h1>
+          <p>Selecciona una categoría, descubre los sabores disponibles y arma una combinación para desayunar, regalar o compartir.</p>
+          <a class="boton" href="pedidos.html">Consultar la preventa</a>
+        </div>
+        <img src="imagenes/menu-laminados.jpg" alt="Panecillos laminados de Ítaca Bakery">
+      </section>
+
+      <section class="catalogo-principal">
+        <h2>Categorías de productos</h2>
+        <ul class="nav nav-tabs pestañas-menu" id="menuTabs" role="tablist">
+          <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pan" type="button">Pan artesanal</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#croissants" type="button">Croissants</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pasteles" type="button">Pasteles</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#bebidas" type="button">Bebidas</button></li>
+        </ul>
+
+        <div class="tab-content" id="menuTabsContent">
+          <div class="tab-pane fade show active" id="pan">
+            <div class="detalle-categoria">
+              <img src="imagenes/pan-artesanal-nuevo.png" alt="Panes artesanales de masa madre">
+              <div>
+                <h3>Panes de fermentación lenta</h3>
+                <p>Son nuestras piezas más versátiles: perfectas para el desayuno, una comida tranquila o una tabla para compartir. Cada pan descansa el tiempo necesario para desarrollar sabor y textura.</p>
+                <ul class="lista-productos">
+                  <li><strong>Pan de campo</strong> — miga suave y corteza dorada.</li>
+                  <li><strong>Focaccia de romero</strong> — aceite de oliva, sal de mar y hierbas.</li>
+                  <li><strong>Pan de semillas</strong> — avena, ajonjolí y girasol.</li>
+                  <li><strong>Pan de nuez</strong> — ideal para quesos y mermeladas.</li>
+                </ul>
+                <a class="boton pequeno" href="pedidos.html">Apartar pan para mi mesa</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="croissants">
+            <div class="detalle-categoria">
+              <img src="imagenes/croissants-nuevos.png" alt="Croissants dorados de Ítaca Bakery">
+              <div>
+                <h3>Capas crujientes, centro suave</h3>
+                <p>Trabajamos la masa laminada con mantequilla para conseguir un exterior dorado y un interior ligero. Los sabores especiales cambian según la semana.</p>
+                <ul class="lista-productos">
+                  <li><strong>Clásico de mantequilla</strong> — el favorito para acompañar café.</li>
+                  <li><strong>Almendra</strong> — relleno suave y almendra fileteada.</li>
+                  <li><strong>Chocolate</strong> — barras de chocolate semiamargo.</li>
+                  <li><strong>Fruta de temporada</strong> — relleno que cambia cada semana.</li>
+                </ul>
+                <a class="boton pequeno" href="pedidos.html">Elegir piezas laminadas</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pasteles">
+            <div class="detalle-categoria">
+              <img src="imagenes/pastel-frutos-rojos.png" alt="Pastel de vainilla con frutos rojos">
+              <div>
+                <h3>Pasteles para celebrar lo cotidiano</h3>
+                <p>Tenemos rebanadas para consentirte y pasteles completos para cumpleaños, visitas o una tarde especial. Pregunta por la disponibilidad de decoración y tamaños.</p>
+                <ul class="lista-productos">
+                  <li><strong>Vainilla y frutos rojos</strong> — crema ligera y compota casera.</li>
+                  <li><strong>Chocolate intenso</strong> — capas de pan suave y ganache.</li>
+                  <li><strong>Limón</strong> — fresco, cremoso y equilibrado.</li>
+                  <li><strong>Pastel personalizado</strong> — sabor y tamaño por encargo.</li>
+                </ul>
+                <a class="boton pequeno" href="contacto.html">Preguntar por un pastel especial</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="bebidas">
+            <div class="detalle-categoria">
+              <img src="imagenes/bebidas-itaca.png" alt="Cappuccino y bebida fría de Ítaca Bakery">
+              <div>
+                <h3>Bebidas que acompañan bien</h3>
+                <p>Una bebida cambia por completo la experiencia de una pieza recién horneada. Pregunta cuáles tenemos disponibles el día de tu entrega.</p>
+                <ul class="lista-productos">
+                  <li><strong>Cappuccino</strong> — espresso, leche vaporizada y espuma.</li>
+                  <li><strong>Chocolate frío</strong> — cremoso y con cacao.</li>
+                  <li><strong>Café americano</strong> — suave y aromático.</li>
+                  <li><strong>Té de temporada</strong> — opción ligera para acompañar pan dulce.</li>
+                </ul>
+                <a class="boton pequeno" href="contacto.html">Consultar bebidas disponibles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-pagina video-derecha" aria-labelledby="titulo-video-pagina">
+        <h2 id="titulo-video-pagina">Así preparamos nuestras piezas laminadas</h2>
+        <p>Cada doblez y cada minuto en el horno ayudan a crear piezas ligeras y doradas. Descubre nuestros croissants en el menú.</p>
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9eQpU5Z_J2E?si=2o22DuNIOxbNjfcf" title="Así preparamos nuestras piezas laminadas" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="mt-2"><a href="https://www.youtube.com/watch?v=9eQpU5Z_J2E" target="_blank" rel="noopener noreferrer">Ver en YouTube</a></p>
+      </section>
+      <section class="seleccion-menu">
+        <h2>Selección para compartir</h2>
+        <p>Estas son algunas recomendaciones para empezar; revisa las pestañas de arriba para conocer todas las opciones de cada categoría.</p>
+        <label class="form-label" for="buscador">Buscar en esta selección</label>
+        <input class="form-control mb-3" id="buscador" type="search" placeholder="Escribe el nombre de un producto">
+        <div class="tres-columnas">
+          <article id="pan-artesanal" class="producto" data-precio="85">
+            <img src="imagenes/pan-artesanal-nuevo.png" alt="Pan de campo artesanal">
+            <div class="producto-texto">
+              <h3>Pan de campo</h3>
+              <p>Masa madre, fermentación lenta, miga húmeda y una corteza que se mantiene crujiente.</p>
+              <p class="precio">$85 por pieza</p>
+              <button class="boton pequeno btn-agregar" type="button">Agregar al carrito</button>
+            </div>
+          </article>
+          <article id="croissants-destacados" class="producto" data-precio="75">
+            <img src="imagenes/croissants-nuevos.png" alt="Croissants de mantequilla">
+            <div class="producto-texto">
+              <h3>Croissant de almendra</h3>
+              <p>Relleno cremoso, almendra fileteada y un toque de azúcar para una pieza especial.</p>
+              <p class="precio">$75 por pieza</p>
+              <button class="boton pequeno btn-agregar" type="button">Agregar al carrito</button>
+            </div>
+          </article>
+          <article id="pasteles-destacados" class="producto" data-precio="360">
+            <img src="imagenes/pastel-frutos-rojos.png" alt="Pastel de vainilla con frutos rojos">
+            <div class="producto-texto">
+              <h3>Pastel de frutos rojos</h3>
+              <p>Bizcocho de vainilla, crema ligera y compota de frutos rojos para compartir.</p>
+              <p class="precio">Desde $360</p>
+              <button class="boton pequeno btn-agregar" type="button">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="caja" aria-labelledby="titulo-carrito">
+        <h2 id="titulo-carrito">Mi carrito</h2>
+        <p class="mb-2">Selección para consultar disponibilidad. El pastel se calcula desde $360; el precio final se confirma al cotizar.</p>
+        <ul class="list-group mb-3" id="carrito" aria-live="polite"></ul>
+        <p class="fw-bold">Total estimado: <span id="total-carrito">$0.00</span></p>
+        <a class="boton pequeno" href="contacto.html">Consultar mi pedido</a>
+      </section>
+
+      <section id="bebidas-especial" class="especial">
+        <div>
+          <p class="etiqueta">ESPECIAL DE LA SEMANA</p>
+          <h2>Pausa de café y pan dulce.</h2>
+          <p>Combina un cappuccino, chocolate frío o té de temporada con una pieza laminada. Las bebidas se preparan para acompañar tu entrega.</p>
+          <a class="boton pequeno" href="contacto.html">Consultar el especial de bebidas</a>
+        </div>
+        <img src="imagenes/bebidas-itaca.png" alt="Café y chocolate frío de Ítaca Bakery">
+      </section>
+
+      <section class="utilidades-bootstrap" aria-labelledby="titulo-detalles-menu">
+        <h2 id="titulo-detalles-menu">Pequeñas pistas para elegir el menú</h2>
+        <div class="tres-columnas">
+          <div class="p-3 mb-3 bg-light border rounded">
+            <p class="text-primary text-uppercase fw-bold">Panes del día</p>
+            <p class="text-start mb-0">El pan de campo y la focaccia son buenas opciones para compartir en casa.</p>
+          </div>
+          <div class="p-3 mt-3 bg-warning border-start border-4 border-dark rounded">
+            <p class="text-dark text-uppercase fw-bold">Piezas especiales</p>
+            <p class="text-center mb-0">Los rellenos de fruta, crema o chocolate pueden cambiar según la semana.</p>
+          </div>
+          <div class="p-3 mb-3 bg-dark border border-light rounded">
+            <p class="text-white text-uppercase fw-bold">Consulta disponibilidad</p>
+            <p class="text-white text-end mb-0">Aparta tus favoritos antes de que cerremos la preventa.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="informacion-destacada" aria-labelledby="titulo-breakpoints-menu">
+        <h2 id="titulo-breakpoints-menu">Encuentra tu siguiente antojo</h2>
+        <div class="cuatro-columnas">
+          <div class="caja"><h3>Pan para la mesa</h3><p>Prueba un pan de campo si buscas corteza firme y miga suave para acompañar alimentos.</p></div>
+          <div class="caja"><h3>Dulce clásico</h3><p>El croissant de mantequilla es una opción ligera para comer solo o con café.</p></div>
+          <div class="caja"><h3>Para celebrar</h3><p>Los pasteles se cotizan según sabor, tamaño y fecha para que recibas la cantidad adecuada.</p></div>
+          <div class="caja"><h3>Algo para beber</h3><p>Elige cappuccino, chocolate frío o té de temporada para completar tu pedido.</p></div>
+        </div>
+      </section>
+
+      <section class="contenedores-bootstrap" aria-labelledby="titulo-contenedores-menu">
+        <h2 id="titulo-contenedores-menu">Detalles del menú</h2>
+        <div class="nota"><strong>Pan artesanal:</strong> elige entre pan de campo, semillas, nuez o focaccia con romero.</div>
+        <div class="nota"><strong>Croissants:</strong> pregunta si hay piezas de almendra, chocolate o fruta de temporada.</div>
+        <div class="nota"><strong>Pasteles:</strong> pide con anticipación si buscas una opción para varias personas.</div>
+        <div class="nota"><strong>Bebidas:</strong> las preparamos para acompañar la entrega o para recoger junto con tu pan.</div>
+      </section>
+
+      <section class="componentes-bootstrap" aria-labelledby="titulo-acordeon-menu">
+        <h2 id="titulo-acordeon-menu">Dos consejos para elegir</h2>
+        <div class="accordion" id="acordeonMenu">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="tituloAcordeonPan"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acordeonPan" aria-expanded="true" aria-controls="acordeonPan">¿Qué pan puedo llevar para compartir?</button></h3>
+            <div id="acordeonPan" class="accordion-collapse collapse show" aria-labelledby="tituloAcordeonPan" data-bs-parent="#acordeonMenu"><div class="accordion-body">El pan de campo y la focaccia funcionan bien para una comida, una tabla o un desayuno en familia.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="tituloAcordeonDulce"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acordeonDulce" aria-expanded="false" aria-controls="acordeonDulce">¿Qué pieza dulce puedo probar primero?</button></h3>
+            <div id="acordeonDulce" class="accordion-collapse collapse" aria-labelledby="tituloAcordeonDulce" data-bs-parent="#acordeonMenu"><div class="accordion-body">Elige un croissant de mantequilla si buscas algo clásico o uno relleno si quieres un sabor más especial.</div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div><strong>Ítaca Bakery</strong><br>Pan hechos con amor</div>
+      <div><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="contacto.html">Contacto</a></div>
+      <p>&copy; 2026 Ítaca Bakery.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="avance10.js"></script>
+  </body>
+</html>

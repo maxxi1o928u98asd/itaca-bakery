@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería artesanal en Roma Norte | Ítaca Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta
+      name="description"
+      content="Ítaca Bakery ofrece pan de masa madre, croissants, pasteles y bebidas artesanales en Roma Norte. Consulta el menú y realiza tu pedido."
+    >
+    <meta
+      name="keywords"
+      content="Ítaca Bakery, pan artesanal, pasteles, bebidas, bakery shop"
+    >
+    <meta
+      name="author"
+      content="Rodrigo Villalobos Guerrero, Christian Emilio Medina Cancino y Noé Maximiliano Ruíz Acosta"
+    >
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="logotipo">Ítaca Bakery</p>
+        <p class="sublogo">Pan hechos con amor</p>
+      </div>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a class="activo" href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <button class="boton-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMovil" aria-controls="menuMovil">☰ Menú</button>
+    <div class="offcanvas offcanvas-end menu-movil" tabindex="-1" id="menuMovil" aria-labelledby="tituloMenuMovil">
+      <div class="offcanvas-header"><h2 class="offcanvas-title" id="tituloMenuMovil">Ítaca Bakery</h2><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div>
+      <div class="offcanvas-body"><p>Pan hechos con amor</p><ul class="menu-movil-lista"><li><a href="index.html">Inicio</a></li><li><a href="menu.html">Menú</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="pedidos.html">Pedidos</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+    </div>
+
+    <main class="inicio-principal">
+      <div class="distribucion-principal">
+        <div class="contenido-principal">
+          <section id="inicio" class="presentacion hero-inicio" aria-labelledby="titulo-principal">
+            <div class="presentacion-texto">
+              <p class="etiqueta">PANADERÍA ARTESANAL</p>
+              <h1 id="titulo-principal">Pan artesanal para acompañar tus momentos.</h1>
+              <p class="introduccion">
+                Horneamos en pequeños lotes panes de masa madre, croissants,
+                pasteles y bebidas para que cada pedido llegue fresco, bonito y listo para compartir.
+              </p>
+              <a class="boton" href="menu.html">Explorar el menú</a>
+            </div>
+
+            <figure class="imagen-principal">
+              <img
+                src="imagenes/pan-artesanal-nuevo.png"
+                alt="Panes artesanales recién horneados de Ítaca Bakery"
+              >
+              <figcaption>Panes con fermentación lenta, listos para llegar a tu mesa.</figcaption>
+            </figure>
+          </section>
+
+      <section class="video-pagina video-centro" aria-labelledby="titulo-video-pagina">
+        <h2 id="titulo-video-pagina">El arte de nuestras masas laminadas</h2>
+        <p>Mira las capas y el horneado que inspiran nuestros croissants y panes dulces.</p>
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OK2maAZlc7g?si=N30YogTfHfLzIb92" title="El arte de nuestras masas laminadas" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="mt-2"><a href="https://www.youtube.com/watch?v=OK2maAZlc7g" target="_blank" rel="noopener noreferrer">Ver en YouTube</a></p>
+      </section>
+          <section id="productos" class="seccion-productos" aria-labelledby="titulo-productos">
+            <h2 id="titulo-productos">Antojos para cada momento</h2>
+            <p>
+              Desde el primer pan de la mañana hasta un pastel para celebrar:
+              conoce una pequeña muestra de lo que sale de nuestro horno.
+            </p>
+
+            <div class="productos-contenido">
+              <div class="tarjetas-productos">
+                <article>
+                  <img src="imagenes/pan-artesanal-nuevo.png" alt="Pan artesanal recién horneado">
+                  <div class="tarjeta-producto-texto">
+                    <h3>Panes de masa madre</h3>
+                    <p>Pan de campo, focaccia de romero y piezas con semillas; todos con fermentación lenta y corteza crujiente.</p>
+                    <a class="boton pequeno" href="menu.html#pan-artesanal">Conocer los panes</a>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="imagenes/croissants-nuevos.png" alt="Croissants dorados con mermelada">
+                  <div class="tarjeta-producto-texto">
+                    <h3>Croissants especiales</h3>
+                    <p>Clásicos, de almendra, chocolate y sabores de temporada con capas ligeras hechas una a una.</p>
+                    <a class="boton pequeno" href="menu.html#croissants-destacados">Elegir un croissant</a>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="imagenes/pastel-frutos-rojos.png" alt="Rebanada de pastel con frutos rojos">
+                  <div class="tarjeta-producto-texto">
+                    <h3>Pasteles para compartir</h3>
+                    <p>Opciones de chocolate, vainilla con frutos rojos y pasteles por encargo para reuniones pequeñas.</p>
+                    <a class="boton pequeno" href="menu.html#pasteles-destacados">Ver sabores de pastel</a>
+                  </div>
+                </article>
+              </div>
+
+              <figure class="imagen-productos">
+                <img
+                  src="imagenes/bebidas-itaca.png"
+                  alt="Café y bebidas de Ítaca Bakery"
+                >
+                <figcaption>Café, chocolate frío y una pieza recién horneada para una pausa especial.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="seccion-pestañas" aria-labelledby="titulo-informacion">
+            <h2 id="titulo-informacion">Tu visita a Ítaca</h2>
+            <ul class="nav nav-tabs pestañas-menu" role="tablist">
+              <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#inicio-historia" type="button">Nuestra historia</button></li>
+              <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#inicio-pedido" type="button">Cómo pedir</button></li>
+              <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#inicio-contacto" type="button">Contacto</button></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="inicio-historia"><p>Ítaca es una panadería de preventa: preparamos solo lo necesario, cuidamos cada masa y horneamos con tiempo para que recibas piezas frescas.</p><a class="boton pequeno" href="nosotros.html">Descubrir nuestra historia</a></div>
+              <div class="tab-pane fade" id="inicio-pedido"><p>Primero eliges tus piezas favoritas, después confirmamos disponibilidad y finalmente acordamos la fecha de entrega o recolección.</p><a class="boton pequeno" href="pedidos.html">Organizar mi pedido</a></div>
+              <div class="tab-pane fade" id="inicio-contacto"><p>¿No sabes qué elegir? Cuéntanos para cuántas personas es tu pedido y te ayudamos a combinar panes, postres y bebidas.</p><a class="boton pequeno" href="contacto.html">Pedir una recomendación</a></div>
+            </div>
+          </section>
+
+          <section class="llamada-inicio" aria-labelledby="titulo-regalo">
+            <div>
+              <p class="etiqueta">UN DETALLE PARA COMPARTIR</p>
+              <h2 id="titulo-regalo">Arma una caja con tus favoritos.</h2>
+              <p>Podemos sugerirte una combinación de pan, croissants, postres y bebidas para una visita, un regalo o una mañana tranquila en casa.</p>
+            </div>
+            <a class="boton" href="contacto.html">Solicitar una combinación</a>
+          </section>
+
+          <section class="utilidades-bootstrap" aria-labelledby="titulo-detalles-inicio">
+            <h2 id="titulo-detalles-inicio">Opciones para un pedido especial</h2>
+            <div class="tres-columnas">
+              <div class="p-3 mb-3 bg-light border rounded">
+                <p class="text-primary text-uppercase fw-bold">Pasteles por encargo</p>
+                <p class="text-start mb-0">Compártenos la fecha, el sabor que buscas y para cuántas personas será tu celebración.</p>
+              </div>
+              <div class="p-3 mt-3 bg-warning border-start border-4 border-dark rounded">
+                <p class="text-dark text-uppercase fw-bold">Cajas para regalar</p>
+                <p class="text-center mb-0">Podemos combinar panes, piezas dulces y bebidas para preparar un detalle listo para compartir.</p>
+              </div>
+              <div class="p-3 mb-3 bg-dark border border-light rounded">
+                <p class="text-white text-uppercase fw-bold">Entrega local</p>
+                <p class="text-white text-end mb-0">Revisamos la ruta disponible en Roma Norte y alrededores al confirmar tu pedido.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="informacion-destacada" aria-labelledby="titulo-breakpoints-inicio">
+            <h2 id="titulo-breakpoints-inicio">Elige según el momento</h2>
+            <div class="cuatro-columnas">
+              <div class="caja"><h3>Desayuno lento</h3><p>Combina un croissant de mantequilla con café o chocolate para empezar la mañana.</p></div>
+              <div class="caja"><h3>Comida en casa</h3><p>El pan de campo y la focaccia son ideales para acompañar una mesa compartida.</p></div>
+              <div class="caja"><h3>Un regalo</h3><p>Podemos sugerirte una caja con piezas dulces y pan para sorprender a alguien especial.</p></div>
+              <div class="caja"><h3>Una celebración</h3><p>Para un pastel por encargo, cuéntanos la fecha y el número aproximado de personas.</p></div>
+            </div>
+          </section>
+
+          <section class="contenedores-bootstrap" aria-labelledby="titulo-contenedores-inicio">
+            <h2 id="titulo-contenedores-inicio">Antes de hacer tu pedido</h2>
+            <div class="nota"><strong>Preventa:</strong> puedes elegir panes, masas laminadas y postres de lunes a miércoles.</div>
+            <div class="nota"><strong>Confirmación:</strong> el jueves revisamos existencias y te compartimos el total de tu pedido.</div>
+            <div class="nota"><strong>Entrega:</strong> los viernes y sábados acordamos la ruta o el horario de recolección.</div>
+            <div class="nota"><strong>Sabores especiales:</strong> pregunta por los rellenos, panes y bebidas que estarán disponibles esta semana.</div>
+          </section>
+
+          <section class="componentes-bootstrap" aria-labelledby="titulo-insignias">
+            <h2 id="titulo-insignias">Dos formas de recibir tu pedido</h2>
+            <p>Al confirmar disponibilidad, elegimos contigo la opción que mejor se ajuste a tu semana.</p>
+            <div class="d-flex gap-2">
+              <span class="badge rounded-pill bg-warning text-dark">Entrega en ruta</span>
+              <span class="badge rounded-pill bg-dark">Recolección acordada</span>
+            </div>
+          </section>
+        </div>
+
+        <aside class="accesos-inicio" aria-label="Información complementaria">
+          <h2>Información útil antes de pedir</h2>
+          <section aria-labelledby="titulo-accesos">
+            <h3 id="titulo-accesos">Explora con calma</h3>
+            <nav aria-label="Accesos de Ítaca">
+              <ul>
+                <li><a href="menu.html">Ver sabores de la semana</a></li>
+                <li><a href="nosotros.html">Conocer el proceso artesanal</a></li>
+                <li><a href="pedidos.html">Consultar fechas de preventa</a></li>
+              </ul>
+            </nav>
+          </section>
+
+          <section aria-labelledby="titulo-ubicacion">
+            <h3 id="titulo-ubicacion">Entrega y recolección</h3>
+            <p>Atendemos Roma Norte y alrededores. Al confirmar tu pedido revisamos la ruta disponible y el horario más conveniente.</p>
+            <a href="contacto.html#horarios">Revisar la zona de entrega</a>
+          </section>
+
+          <section aria-labelledby="titulo-redes">
+            <h3 id="titulo-redes">Novedades de la semana</h3>
+            <p>En Instagram compartimos nuevos sabores, piezas recién horneadas y avisos de preventa.</p>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Abrir las novedades</a>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Avance 13: número de demostración. Para usar el número real del negocio, sustituir 525512345678 en este enlace y en los dos enlaces de contacto.html. -->
+    <a class="btn btn-success whatsapp-flotante" href="https://wa.me/525512345678?text=Hola%2C%20%C3%8Dtaca%20Bakery.%20Quiero%20consultar%20los%20panes%20de%20masa%20madre%2C%20croissants%20y%20pasteles%20disponibles%20para%20la%20preventa.%20%C2%BFMe%20ayudan%20con%20sabores%2C%20precios%20y%20opciones%20de%20entrega%20o%20recolecci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp los productos y la preventa de Ítaca Bakery" title="WhatsApp de demostración"><i class="bi bi-whatsapp" aria-hidden="true"></i><span>WhatsApp</span></a>
+    <footer>
+      <div><strong>Ítaca Bakery</strong><br><span>Pan hechos con amor</span></div>
+      <div><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="contacto.html">Contacto</a></div>
+      <p>&copy; 2026 Ítaca Bakery. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+--
