@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const productos = document.querySelectorAll('.seleccion-menu .producto');
   const listaCarrito = document.querySelector('#carrito');
   const totalCarrito = document.querySelector('#total-carrito');
+  const botonOrdenar = document.querySelector('#btn-ordenar');
+  const confirmacionPedido = document.querySelector('#confirmacion-pedido');
+  const mensajePedido = document.querySelector('#mensaje-pedido');
   const carrito = [];
 
   if (buscador) {
@@ -42,6 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     totalCarrito.textContent = '$' + total.toFixed(2);
+    if (botonOrdenar) botonOrdenar.disabled = carrito.length === 0;
+  }
+
+  function calcularHoraRecoleccion() {
+    const horaLista = new Date(Date.now() + 15 * 60 * 1000);
+    const minutosRedondeados = Math.ceil(horaLista.getMinutes() / 5) * 5;
+    horaLista.setMinutes(minutosRedondeados, 0, 0);
+    return horaLista.toLocaleTimeString('es-MX', {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    });
   }
 
   document.querySelectorAll('.btn-agregar').forEach(function (boton) {
@@ -56,9 +71,20 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         carrito.push({ nombre: nombre, precio: precio, cantidad: 1 });
       }
+      if (confirmacionPedido) confirmacionPedido.classList.add('d-none');
       mostrarCarrito();
     });
   });
+
+  if (botonOrdenar && confirmacionPedido && mensajePedido) {
+    botonOrdenar.addEventListener('click', function () {
+      if (carrito.length === 0) return;
+      const horaRecoleccion = calcularHoraRecoleccion();
+      mensajePedido.textContent = '¡Gracias por tu pedido! Tu orden estará lista para recogerse a partir de las ' + horaRecoleccion;
+      confirmacionPedido.classList.remove('d-none');
+      confirmacionPedido.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  }
 
   mostrarCarrito();
 

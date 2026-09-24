@@ -166,7 +166,11 @@
         <p class="mb-2">Selección para consultar disponibilidad. El pastel se calcula desde $360; el precio final se confirma al cotizar.</p>
         <ul class="list-group mb-3" id="carrito" aria-live="polite"></ul>
         <p class="fw-bold">Total estimado: <span id="total-carrito">$0.00</span></p>
-        <a class="boton pequeno" href="contacto.html">Consultar mi pedido</a>
+        <button class="boton pequeno" id="btn-ordenar" type="button" disabled>Ordenar</button>
+        <div class="alert alert-success mt-3 d-none" id="confirmacion-pedido" role="status" aria-live="polite">
+          <p class="mb-3" id="mensaje-pedido"></p>
+          <a class="boton pequeno" href="contacto.html#mapa">Ver mapa para recoger mi pedido</a>
+        </div>
       </section>
 
       <section id="bebidas-especial" class="especial">
